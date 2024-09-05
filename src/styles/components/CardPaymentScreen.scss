@@ -1,0 +1,39 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.container.card-payment {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--primary-color);
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: var(--text-color);
+    }
+
+    button {
+        @include button-style(var(--background-color), var(--text-color));
+        margin-top: 40px;
+        border-radius: var(--border-radius);
+    }
+
+    .payment-controls {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+        background-color: var(--primary-color);
+
+        button {
+            padding: 15px 40px;
+            border-radius: var(--border-radius);
+        }
+    }
+
+    p {
+        margin-top: 30px;
+        font-size: 22px;
+        color: var(--text-color);
+    }
+}

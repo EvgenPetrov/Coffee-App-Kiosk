@@ -1,0 +1,51 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.container.cash-payment {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--primary-color);
+
+    h1,
+    h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: var(--text-color);
+    }
+
+    .cash-instruction {
+        margin-bottom: 30px;
+
+        p {
+            font-size: 20px;
+            color: #666;
+        }
+
+        .cash-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            button {
+                background-color: var(--background-color);
+                border-radius: var(--border-radius);
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .cancel-button {
+        background-color: var(--background-color);
+        border-radius: var(--border-radius);
+        color: #0a0101;
+        padding: 10px 20px;
+        width: 300px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--error-color-dark);
+        }
+    }
+}

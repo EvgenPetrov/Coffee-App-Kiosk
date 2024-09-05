@@ -1,0 +1,103 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.drink-selection {
+    padding: 60px 40px;
+    background-color: var(--background-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        align-self: flex-start;
+        font-size: 48px;
+        margin-bottom: 40px;
+        color: var(--text-color);
+    }
+
+    .category-title {
+        font-size: 32px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 40px;
+
+        .category {
+            background-color: #fff;
+            border: 1px solid #d8d8d8;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            @include flex-center;
+            flex-direction: column;
+
+            &:hover {
+                background-color: var(--primary-hover-color);
+                box-shadow: var(--box-shadow);
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--text-color);
+            }
+
+            &.active {
+                background-color: var(--primary-color);
+            }
+        }
+    }
+
+    .drink-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Три карточки в строке */
+        gap: 20px;
+        width: 100%; /* Чтобы занимало всю ширину контейнера */
+
+        .drink-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--box-shadow);
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .drink-info {
+                text-align: center;
+
+                h2 {
+                    font-size: 24px;
+                    color: var(--text-color);
+                }
+
+                p {
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: #ff8c00;
+                }
+            }
+        }
+    }
+}

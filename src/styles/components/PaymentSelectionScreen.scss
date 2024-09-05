@@ -1,0 +1,51 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.payment-selection {
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+
+    .paymentImg {
+        width: 200px;
+        margin-bottom: 70px;
+    }
+
+    h1 {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 48px;
+        color: var(--text-color);
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    .payment-options {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        .payment-option {
+            @include button-style(var(--background-color), var(--text-color));
+            padding: 40px 60px;
+            width: 450px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            h2 {
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 36px;
+                margin: 0;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

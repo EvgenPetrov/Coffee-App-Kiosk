@@ -1,0 +1,30 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.container.out-of-stock-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f77d23;
+
+    .message {
+        text-align: center;
+
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            @include button-style(#fff, #f77d23);
+        }
+    }
+}

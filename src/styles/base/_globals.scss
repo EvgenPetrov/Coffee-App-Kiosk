@@ -1,0 +1,22 @@
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: var(--font-family);
+    font-weight: 600;
+    border-radius: var(--border-radius);
+}

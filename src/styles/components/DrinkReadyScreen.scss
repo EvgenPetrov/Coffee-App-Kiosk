@@ -1,0 +1,30 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.ready-screen {
+    text-align: center;
+    // margin-top: 100px;
+    background-color: var(--primary-color);
+
+    .ready-message {
+        img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .complete-button {
+            background-color: var(--background-color);
+            width: 250px;
+            height: 50px;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 65%;
+        }
+    }
+}
