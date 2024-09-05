@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Coffee-App-Kiosk/static/css/main.7be28e6a.css",
+    "main.js": "/Coffee-App-Kiosk/static/js/main.0fc450d2.js",
+    "static/media/cappuccino.png": "/Coffee-App-Kiosk/static/media/cappuccino.4d1b0eb4eb195321f065.png",
+    "static/media/americano.png": "/Coffee-App-Kiosk/static/media/americano.6363570556be8a8e9cac.png",
+    "static/media/tea.png": "/Coffee-App-Kiosk/static/media/tea.21a0bc87121debbfc0c2.png",
+    "static/media/espresso.png": "/Coffee-App-Kiosk/static/media/espresso.901081f5e82781ad487b.png",
+    "static/media/soda.png": "/Coffee-App-Kiosk/static/media/soda.fdd440d85bd886b20c43.png",
+    "static/media/latte.png": "/Coffee-App-Kiosk/static/media/latte.cf61f08bf6181edb341b.png",
+    "static/media/milkshake.png": "/Coffee-App-Kiosk/static/media/milkshake.034ed754c8254ec2b18c.png",
+    "static/media/coffee.png": "/Coffee-App-Kiosk/static/media/coffee.1a239f776d503ef3008f.png",
+    "index.html": "/Coffee-App-Kiosk/index.html",
+    "main.7be28e6a.css.map": "/Coffee-App-Kiosk/static/css/main.7be28e6a.css.map",
+    "main.0fc450d2.js.map": "/Coffee-App-Kiosk/static/js/main.0fc450d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7be28e6a.css",
+    "static/js/main.0fc450d2.js"
+  ]
+}
